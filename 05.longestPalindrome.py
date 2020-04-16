@@ -1,7 +1,8 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         size = len(s)
-        if size <= 1: return s
+        if size <= 1:
+            return s
         dp = [[False for _ in range(size)] for _ in range(size)]
         longest_l = 1
         res = s[0]
